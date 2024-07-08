@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="H:\LUMINAR\SpaceX\style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- favicon -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=DM+Serif+Display:ital@0;1&family=Gruppo&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=DM+Serif+Display:ital@0;1&family=Gruppo&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Chathura:wght@100;300;400;700;800&family=DM+Serif+Display:ital@0;1&family=Gruppo&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Chathura:wght@100;300;400;700;800&family=DM+Serif+Display:ital@0;1&family=Gruppo&family=Protest+Guerrilla&family=Train+One&display=swap" rel="stylesheet">
+
+
+
+    <!-- style -->
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        nav{
+            background-color: black;
+        }
+
+        #firstvideo{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #firstvideo .contentstar{
+          position: absolute;
+          text-align: center;
+          
+        }
+
+        #firstvideo .contentstar h1{
+           font-family: "Archivo Black", sans-serif;
+        }
+
+        #firstvideo .contentstar p{
+          font-size: 10px;
+          width: 700px;
+          font-family: "DM Serif Display", serif;
+        }
+
+        #firstvideo video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media(min-aspect-ratio:16/9){
+            .background-clip{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media(max-aspect-ratio:16/9){
+            .background-clip{
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        #earth{
+            width: 100%;
+            height: 600px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        #earth .earthcnt{
+          position: absolute;
+          text-align: center;
+          
+        }
+
+        #earth .earthcnt h1{
+
+        }
+
+        #earth .earthcnt p{
+          font-size: 10px;
+          width: 700px;
+        }
+
+        #earth video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        @media(min-aspect-ratio:16/9){
+            .background-clip1{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media(max-aspect-ratio:16/9){
+            .background-clip1{
+                width: auto;
+                height: 100%;
+            }
+        }
+
+
+        #introduction{
+            display: flex;
+            flex-direction: row;
+            height: 700px;
+            background-image: url(https://static.wixstatic.com/media/51fb13_62b5c7aed15b4b9fb52ce59cf1ccb904f000.jpg/v1/fill/w_1168,h_657,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/51fb13_62b5c7aed15b4b9fb52ce59cf1ccb904f000.jpg);
+            background-size: cover;
+            margin-top: 10px;
+        }
+
+        #introduction #introdiv1 #caption1{
+          font-family: "Black Ops One", system-ui;
+        }
+
+        #introduction #introdiv1 p{
+          font-family: "Gruppo", sans-serif;
+        }
+
+        #spacex{
+            width: 100%;
+            height: 800px;
+            background-image: url(https://media.defense.gov/2018/Nov/09/2002061579/1088/820/0/181106-F-UP786-902.JPG);
+            background-size: 1200px;
+        }
+
+        #muskintro{
+            background-color: black;
+            height: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* #muskintro img{
+            height: 500px;
+            width: 900px;
+            align-items: center;
+        } */
+
+        #muskdiv{
+            background-color: rgb(255, 255, 255);
+            height: 600px;
+            width: 1200px;
+            margin-top: 100px;
+            box-shadow: 2px 2px 5px 12px rgb(41, 41, 41);
+        }
+
+        #introdiv1{
+          width: 50%;
+          position: relative;
+        }
+
+        #introdiv1 h1{
+          position: absolute;
+          top: 220px;
+          left: 100px;
+        }
+
+        #introdiv1 p{
+          position: absolute;
+          top: 270px;
+          left: 107px;
+        }
+
+        #introdiv1 button{
+          position: absolute;
+          top: 400px;
+          left: 107px;
+        }
+
+        #introdiv2{
+          width: 50%;
+          position: relative;
+        }
+
+        #introdiv2 img{
+          position: absolute;
+          top: 60px;
+          left: 30px;
+        }
+
+        #spacex{
+          position: relative;
+        }
+
+        #spacex h1{
+          position: absolute;
+          top: 320px;
+          left: 100px;
+        }
+
+        #spacex P{
+          position: absolute;
+          top: 380px;
+          left: 100px;
+          font-size: 10px;
+          width: 400px;
+          opacity: 0.8;
+        }
+
+        #spacex button{
+          position: absolute;
+          top: 480px;
+          left: 100px;
+        }
+
+        .cardmain{
+          display: flex;
+          width: 100%;
+          height: 800px;
+          margin-top: 30px;
+          
+        }
+
+        .cardmain .card1{
+          width: 20%;
+          height: 700px;
+          margin-left: 30px;
+          margin-right: 30px;
+          position: relative;
+        }
+
+        .cardmain .card1 p{
+          font-size: 10px;
+          position: absolute;
+          top: 40px;
+          left: 20px;
+          font-family: "Chathura", sans-serif;
+        }
+
+        .cardmain .card1 h1{
+          position: absolute;
+          top: 25px;
+          left: 30px;
+          font-size: 70px;
+          font-family: "Protest Guerrilla", sans-serif;
+        }
+
+        .cardmain .card1 img{
+          width: 300px;
+          height: 650px;
+        }
+
+        .card1:hover {
+          transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+        .cardmain .card2{
+          width: 20%;
+          height: 400px;
+          margin-left: 30px;
+          margin-right: 30px;
+          position: relative;
+        }
+
+        .cardmain .card2 p{
+          font-size: 10px;
+          position: absolute;
+          top: 40px;
+          left: 20px;
+          font-family: "Chathura", sans-serif;
+        }
+
+        .cardmain .card2 h1{
+          position: absolute;
+          top: 25px;
+          left: 30px;
+          font-size: 80px;
+          font-family: "Protest Guerrilla", sans-serif;
+        }
+
+        .cardmain .card2 img{
+          width: 100%;
+          height: 700px;
+        }
+
+        .card2:hover {
+          transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        .cardmain .card3{
+          width: 20%;
+          height: 400px;
+          margin-left: 30px;
+          margin-right: 30px;
+          position: relative;
+        }
+
+        .cardmain .card3 p{
+          font-size: 10px;
+          position: absolute;
+          top: 40px;
+          left: 20px;
+          font-family: "Chathura", sans-serif;
+        }
+
+        .cardmain .card3 h1{
+          position: absolute;
+          top: 25px;
+          left: 30px;
+          font-size: 60px;
+          font-family: "Protest Guerrilla", sans-serif;
+        }
+
+        .cardmain .card3 img{
+          width: 100%;
+          height: 700px;
+        }
+
+        .card3:hover {
+          transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+        .cardmain .card4{
+          width: 20%;
+          height: 400px;
+          margin-left: 30px;
+          margin-right: 30px;
+          position: relative;
+        }
+
+        .cardmain .card4 p{
+          font-size: 10px;
+          position: absolute;
+          top: 40px;
+          left: 20px;
+          font-family: "Chathura", sans-serif;
+        }
+
+        .cardmain .card4 h1{
+          position: absolute;
+          top: 25px;
+          left: 30px;
+          font-size: 60px;
+          font-family: "Protest Guerrilla", sans-serif;
+        }
+
+        .cardmain .card4 img{
+          width: 100%;
+          height: 700px;
+        }
+
+        .card4:hover {
+          transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+        .blackhole{
+          width: 100%;
+          height: 850px;
+          position: relative;
+          margin-bottom: 100px;
+        }
+
+        .blackhole video{
+          position: relative;
+        }
+
+        .blackhole h1{
+          position: absolute;
+          top: 400px;
+          left: 100px;
+          font-family: "Black Ops One", system-ui;
+        }
+
+        .blackhole p{
+          position: absolute;
+          top: 450px;
+          left: 110px;
+          font-size: 10px;
+          width:500px;
+        }
+
+        .blackhole .mission1{
+          position: absolute;
+          top: 700px;
+          width: 100%;
+          height: 100px;
+          background-color: rgb(51, 51, 51);
+          opacity: 0.5;
+          display: flex;
+        }
+
+        .blackhole .mission1 .mission1head{
+          width: 30%;
+          margin-right: 20px;
+          align-content: center;
+        }
+        .blackhole .mission1 .mission1head h2{
+          font-size: 18px;
+          margin-left: 80px;
+          
+        }
+
+        .blackhole .mission1 .mission1-1{
+          width: 30%;
+          margin-right: 20px;
+          align-content: center;
+        }
+
+        .blackhole .mission1 .mission1-1 h3{
+          font-size: 18px;
+          margin-left: 60px;
+        }
+
+        .blackhole .mission1 .mission1-1 h6{
+          font-size: 10px;
+          margin-left: 60px;
+        }
+
+        .blackhole .mission1 .mission1-2{
+          width: 30%;
+          margin-right: 20px;
+          align-content: center;
+        }
+
+        .blackhole .mission1 .mission1-2 h3{
+          font-size: 18px;
+          margin-left: 80px;
+        }
+
+        .blackhole .mission1 .mission1-2 h6{
+          font-size: 10px;
+          margin-left: 80px;
+        }
+
+        #carouselExampleCaptions h1{
+          text-align: center;
+          font-family: "Protest Guerrilla", sans-serif;
+        }
+
+
+        nav{
+          background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+  <!-- helllo -->
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">SPACEX</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+    
+    <div id="firstvideo">
+      <video autoplay muted plays-inline class="background-clip">
+        <source src="https://cdn.pixabay.com/video/2023/07/29/173690-849839060_tiny.mp4" >
+      </video>
+
+      <div class="contentstar">
+        <h1>SPACE X MISSION</h1>
+        <p>The mission of taking humans to space by Elon Musk, through SpaceX, is primarily known as the Commercial 
+          Crew Program when partnering with NASA to transport astronauts to the International Space Station (ISS). 
+          Another notable mission focused on taking humans to space, including future plans for Mars, is called Starship. 
+          The Starship project aims to develop a 
+          fully reusable spacecraft capable of carrying humans to the Moon, Mars, and beyond.</p>
+        <button type="button" class="btn btn-outline-light">LEARN MORE</button>
+      </div>
+    </div>
+
+    <!-- intoduction -->
+    <div id="introduction">
+        <div id="introdiv1"> 
+            <h1 id="caption1">TAKING HUMANS TO SPACE</h1>
+            <P> SpaceX's human spaceflight missions aim to make space travel accessible and safe using the Dragon spacecraft and
+               Falcon rockets. Collaborating with NASA, they transport astronauts to the ISS and are pioneering space tourism. 
+               Future plans include taking humans to Mars, striving for sustainable colonization. 
+              These efforts revolutionize space access and exploration.</P>
+            <button type="button" class="btn btn-outline-light btn-lg">READ MORE</button>
+        </div>
+
+        <div id="introdiv2" >
+            <img style="height: 600px;" src="https://www.pngall.com/wp-content/uploads/5/Astronaut-Space-PNG-High-Quality-Image.png" alt="">
+        </div>
+</div>
+    <!-- introduction ends -->
+
+    
+    <!-- star link mission -->
+<!-- 
+    <div id="spacex">
+      <h1>SPACE X MISSION</h1>
+        <p>The mission of taking humans to space by Elon Musk, through SpaceX, is primarily known as the Commercial 
+          Crew Program when partnering with NASA to transport astronauts to the International Space Station (ISS). 
+          Another notable mission focused on taking humans to space, including future plans for Mars, is called Starship. 
+          The Starship project aims to develop a 
+          fully reusable spacecraft capable of carrying humans to the Moon, Mars, and beyond.</p>
+            <button type="button" class="btn btn-outline-light">LEARN MORE</button>
+        
+    </div> -->
+    <!-- starlink mission ends -->
+
+   <!-- muskintro -->
+    <!-- <div class="muskintro">
+      <h1>ELON MUSK</h1>
+      <h3>CEO / LEAD DESIGN</h3>
+
+    </div> -->
+   <!-- musk intro ends -->
+
+   <!-- mars -->
+   <!-- <div id="earth">
+    <video autoplay muted plays-inline class="background-clip1">
+      <source src="https://cdn.pixabay.com/video/2022/10/22/135988-764371107_large.mp4" >
+    </video>
+
+    <div class="earthcnt">
+      <h1>EARTH</h1>
+      <p>Earth is the third planet from the Sun, characterized by its abundant liquid water and diverse ecosystems. 
+        It has a unique atmosphere that supports life, consisting primarily of nitrogen and oxygen. 
+        The planet's surface is composed of continents and oceans, with varied landscapes and climates.</p>
+      <button type="button" class="btn btn-outline-light">LEARN MORE</button>
+    </div>
+  </div> -->
+
+   <!-- mars ends -->
+
+   <!-- cards starts -->
+      <div class="cardmain">
+        <div class="card1">
+          <p>E <br>X <br>P<br>L<br>O<br>R<br>E<br><span><br> T<br>H<br>E<br></span> <br> S<br>P<br>A<br>C<br>E</p>
+          <h1>S<br> P<br>A<br>C<br>E</h1>
+          <img src="https://cdn.pixabay.com/photo/2018/03/31/20/47/galaxy-3279274_1280.jpg" alt="astronauts">
+        </div>
+        <div class="card2">
+          <p>E<br>X<br>P<br>L<br>O<br>R<br>E<br><br> T<br>H<br>E<br><br> M<br>A<br>R<br>S<br></p>
+          <h1>M<br>A<br>R<br>S</h1>
+          <img src="https://cdn.pixabay.com/photo/2021/06/28/01/47/mars-6370393_1280.jpg" alt="astronauts">
+        </div>
+        <div class="card3">
+          <p>E<br>X<br>P<br>L<br>O<br>R<br>E<br><br> T<br>H<br>E<br><br> E<br>A<br>R<br>T<br>H</p>
+          <h1>E<br>A<br>R<br>T<br>H</h1>
+          <img src="https://cdn.pixabay.com/photo/2020/06/21/20/25/space-5326668_1280.jpg" alt="astronauts">
+        </div>
+        <div class="card4">
+          <p>E<br>X<br>P<br>L<br>O<br>R<br>E<br> <br>T<br>H<br>E<br><br> S<br>A<br>T<br>U<br>R<br>N</p>
+          <h1>S<br>A<br>T<br>U<br>R<br>N</h1>
+          <img src="https://cdn.pixabay.com/photo/2022/03/11/18/57/planet-7062794_1280.jpg" alt="astronauts">
+        </div>
+      </div>
+   <!-- card ends -->
+
+   <div class="blackhole">
+    <video autoplay muted plays-inline class="background-clip">
+      <source src="https://cdn.pixabay.com/video/2023/08/09/175323-853193719_large.mp4" >
+    </video>
+
+    <h1>VISIT THE BLACK HOLE</h1>
+
+    <p>A black hole is an astronomical object with a gravitational pull so strong that nothing, not even light, 
+      can escape from it. Formed from the remnants of massive stars that have collapsed under their own gravity, 
+      black holes are detected by their influence on nearby matter and radiation. </p>
+
+    <div class="mission1">
+        <div class="mission1head">
+          <h2>MISSION ONGOING</h2>
+        </div>
+
+        <div class="mission1-1">
+          <h3>Event Horizon Telescope (EHT)</h3>
+          <h6>An international collaboration aiming to capture images
+             of black hole event horizons, such as the famous image of M87*.</h6>
+        </div>
+
+        <div class="mission1-2">
+          <h3>LISA (Laser Interferometer Space Antenna):</h3>
+          <h6>A planned space mission to detect and observe gravitational waves from merging black holes.</h6>
+        </div>
+    </div>
+   </div>
+
+<!-- carousel bootstrap -->
+   <div id="carouselExampleCaptions" class="carousel slide">
+    <h1>SPACEX DESIGNS</h1>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img height="600px" src="https://media.sketchfab.com/models/baaf7ee5861a4d818fe9c479ef557a7e/thumbnails/d942d05660f84e649056d3d929285ed7/18593ee5c162412594355c89807a9a75.jpeg" class="d-block w-100" alt="falcon1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FALCON 1</h5>
+          <p>Falcon 1 was SpaceX's first orbital launch vehicle, designed to provide reliable and cost-effective access to space for small payloads.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="600px" src="https://wallpaperaccess.com/full/2025989.jpg" class="d-block w-100" alt="falcon9">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FALCON 9</h5>
+          <p>Falcon 9 is a reusable two-stage rocket developed by SpaceX for the reliable and
+             safe transport of satellites and cargo to orbit and beyond.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="600px" src="https://www.hdwallpapers.in/download/falcon_heavy_rocket_spacex_4k-HD.jpg" class="d-block w-100" alt="falcon heavy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>FALCON HEAVY</h5>
+          <p>Falcon Heavy is a powerful reusable rocket developed by SpaceX, designed to carry large payloads to orbit and beyond,
+             with three Falcon 9 boosters providing increased lift capacity.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="600px" src="https://www.teslarati.com/wp-content/uploads/2018/09/BFR-2018-launch-SpaceX-crop.png" class="d-block w-100" alt="BFR">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>B.F.R</h5>
+          <p>The Big Falcon Rocket (BFR), now known as Starship, 
+            is SpaceX's fully reusable spacecraft designed for deep space missions, including Mars colonization.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel bootstrap -->
+
+  
+  <!-- footer -->
+    <!-- Footer -->
+    <section class="">
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #000000;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3">Register for free</span>
+              <button data-mdb-ripple-init type="button" class="btn btn-outline-light btn-rounded">
+                Sign up!
+              </button>
+            </p>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="#">spacex.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  <!-- footer ends -->
+
+</body>
+</html>
